@@ -4,6 +4,9 @@
     <title>Adventure Amazon</title>
     <script src='application.js'></script>
     <link href='application.css' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <meta content='width=device-width,user-scalable=no,maximum-scale=1.0,initial-scale=1.0' name='viewport'>
   </head>
   <body>
     <header class='top'>
@@ -18,19 +21,71 @@
       <a href='#/contact'>Contact Us!</a>
     </nav>
     <main>
-      <div class='carousel'></div>
-      <div class='about textbox'>
-        <header>
-          <h3>
-            About Us
-          </h3>
-        </header>
-        <div>
-          Welcome to Adventure Amazon!
-          Adventure Amazon is a Travel Agency providing unique tours to Manu Rainforest in Peru. Our goal is to provide an exciting adventure into the Amazon Rainforest and to deliver our guests a satisfying, unique experience. Our guides, drivers and cooks are all highly trained conservationists, striving to protect our beautiful rainforests. Our quest begins and ends in the historical town of Cusco, Peru. We take you over the Andes, into the Amazon and back again. Come with us for an unforgettable experience into the Amazon!
-        </div>
-      </div>
-      <div class='about-manu'></div>
+      <section class='carousel'>
+        <input checked id='img-1' name='radio-btn' type='radio'>
+        <span class='slide-container'>
+          <div class='slide'>
+            <img src='images/Macaw5.jpg'>
+          </div>
+          <div class='nav'>
+            <label class='prev' for='img-4'>&#x2039;</label>
+            <label class='next' for='img-2'>&#x203a;</label>
+          </div>
+        </span>
+        <input id='img-2' name='radio-btn' type='radio'>
+        <span class='slide-container'>
+          <span class='slide'>
+            <img src='images/Monkey2.jpg'>
+          </span>
+          <div class='nav'>
+            <label class='prev' for='img-1'>&#x2039;</label>
+            <label class='next' for='img-3'>&#x203a;</label>
+          </div>
+        </span>
+        <input id='img-3' name='radio-btn' type='radio'>
+        <span class='slide-container'>
+          <span class='slide'>
+            <img src='images/River.jpg'>
+          </span>
+          <div class='nav'>
+            <label class='prev' for='img-2'>&#x2039;</label>
+            <label class='next' for='img-4'>&#x203a;</label>
+          </div>
+        </span>
+        <input id='img-4' name='radio-btn' type='radio'>
+        <span class='slide-container'>
+          <span class='slide'>
+            <img src='images/3 toed Sloth.jpg'>
+          </span>
+          <div class='nav'>
+            <label class='prev' for='img-3'>&#x2039;</label>
+            <label class='next' for='img-1'>&#x203a;</label>
+          </div>
+        </span>
+      </section>
+      <section class='text'>
+        <article class='about textbox'>
+          <header>
+            <h3>
+              About Us
+            </h3>
+          </header>
+          <div>
+            Welcome to Adventure Amazon!
+            Adventure Amazon is a Travel Agency providing unique tours to Manu Rainforest in Peru. Our goal is to provide an exciting adventure into the Amazon Rainforest and to deliver our guests a satisfying, unique experience. Our guides, drivers and cooks are all highly trained conservationists, striving to protect our beautiful rainforests. Our quest begins and ends in the historical town of Cusco, Peru. We take you over the Andes, into the Amazon and back again. Come with us for an unforgettable experience into the Amazon!
+          </div>
+        </article>
+        <article class='about-manu textbox'>
+          <header>
+            <h3>
+              About Manu
+            </h3>
+          </header>
+          <div>
+            Manu is one of the most bio-diverse regions in the World. The bio-reserve is almost exclusively accessed through Cusco, Peru. With 15,000 species of plants and over 1000 species of birds, Manu provides you with an experience you can find nowhere else on Earth. Mammals, Reptiles, Amphibians, Fish, and Insects fill the region. On our journey you will travel down the world-famous Manu Road. Every 50 meters of your descent hosts its own unique ecosystem and species. When we reach the river, you will begin your adventure into Amazon Wildlife. If diversity is what you seek, Manu is for you!
+          </div>
+        </article>
+      </section>
     </main>
   </body>
 </html>
