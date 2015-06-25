@@ -3094,33 +3094,58 @@ var __module0__ = (function(__dependency1__, __dependency2__, __dependency3__, _
 ;(function($) {
   app = Sammy('body', function() {
     this.get('/', function() {
+      $(".home").show();
       var images = [
         "Boat", "Macaw5", "Monkey2", "Jaguar", "3 toed Sloth"
       ];
 
-      for(i in images) {
+      for(var i in images) {
         var index = parseInt(i);
         var $html = $(Handlebars.templates.slide({
           id: index,
           image: images[i],
           prevId: index-1 < 1 ? images.length-1 : index-1,
           nextId: index+1 > images.length-1 ? 1 : index+1,
-          checkedText: i==0 ? "checked" : ""
+          checkedText: index===0 ? "checked" : ""
         }));
         $(".carousel").append($html);
       }
 
       setTimeout(function() {
-        $("main").addClass("visible");
+        $(".home").addClass("visible");
       }, 100);
     });
 
     this.get('itenineraries');
-    this.get('pictures');
+
+    this.get('pictures', function() {
+      $(".pictures").show();
+
+      var pictures = [
+        "Boat", "Macaw5", "Monkey2", "Jaguar", "3 toed Sloth"
+      ];
+
+      for(var i in pictures) {
+        var $html = $(Handlebars.templates.picture({
+          image: pictures[i]
+        }));
+
+        $(".picture-tiles").append($html);
+      }
+
+      setTimeout(function() {
+        $(".pictures").addClass("visible");
+      }, 100);
+    });
+
     this.get('contact');
     this.get('terms');
 
-    this.addListeners = function() {}
+    this.before({}, function(context) {
+      $(".page").hide().removeClass("visible");
+    });
+
+    this.addListeners = function() {};
   });
 
   $(function() {
@@ -3128,6 +3153,7 @@ var __module0__ = (function(__dependency1__, __dependency2__, __dependency3__, _
     app.addListeners();
   });
 })(jQuery);
+
 
 (function() {
   var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
@@ -3144,6 +3170,16 @@ templates['slide'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(
     + "\">&#x2039;</label>\n    <label class=\"next\" for=\"img-"
     + escapeExpression(((helper = (helper = helpers.nextId || (depth0 != null ? depth0.nextId : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"nextId","hash":{},"data":data}) : helper)))
     + "\">&#x203a;</label>\n  </div>\n</span>";
+},"useData":true});
+})();
+
+(function() {
+  var template = Handlebars.template, templates = Handlebars.templates = Handlebars.templates || {};
+templates['picture'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":function(depth0,helpers,partials,data) {
+  var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
+  return "<span class=\"picture-tile\">\n  <img src=\"images/"
+    + escapeExpression(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"image","hash":{},"data":data}) : helper)))
+    + ".jpg\" />\n</span>";
 },"useData":true});
 })();
 

@@ -1,0 +1,9 @@
+@import 'mixins';
+
+.home {
+  opacity: 0;
+  @include prefix(transition, opacity 1500ms ease-in-out);
+  &.visible {
+    opacity: 1;
+  }
+}

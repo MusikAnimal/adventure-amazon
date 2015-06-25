@@ -49,13 +49,13 @@
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
 		},
-	"\/images\/3 toed Sloth.jpg": {
+	"\/images\/3 toed Sloth.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 77408,
-		"inputAbbreviatedPath": "\/images\/3 toed Sloth.jpg",
-		"outputAbbreviatedPath": "\/images\/3 toed Sloth.jpg",
+		"inputAbbreviatedPath": "\/images\/3 toed Sloth.JPG",
+		"outputAbbreviatedPath": "\/images\/3 toed Sloth.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -390,13 +390,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Monkey3.jpg": {
+	"\/images\/Monkey3.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/Monkey3.jpg",
-		"outputAbbreviatedPath": "\/images\/Monkey3.jpg",
+		"inputAbbreviatedPath": "\/images\/Monkey3.JPG",
+		"outputAbbreviatedPath": "\/images\/Monkey3.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -478,13 +478,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/River.jpg": {
+	"\/images\/River.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 0,
-		"inputAbbreviatedPath": "\/images\/River.jpg",
-		"outputAbbreviatedPath": "\/images\/River.jpg",
+		"inputAbbreviatedPath": "\/images\/River.JPG",
+		"outputAbbreviatedPath": "\/images\/River.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -559,6 +559,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/javascripts\/sammy-latest.min.js",
 		"outputAbbreviatedPath": "\/javascripts\/min\/sammy-latest.min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/javascripts\/templates\/picture.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/javascripts\/templates\/picture.js",
+		"outputAbbreviatedPath": "\/javascripts\/templates\/min\/picture-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -659,6 +670,22 @@
 		"shouldRunAutoprefixer": 0,
 		"shouldRunBless": 0,
 		"useLibsass": 0
+		},
+	"\/scss\/pictures.scss": {
+		"createSourceMap": 0,
+		"debugStyle": 0,
+		"decimalPrecision": 10,
+		"fileType": 4,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/scss\/pictures.scss",
+		"outputAbbreviatedPath": "\/css\/pictures.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"useLibsass": 0
 		}
 	},
 "hooks": [
@@ -694,6 +721,12 @@
 			"followForSyntaxChecking": 1,
 			"linkedFileAbbreviatedPath": "\/javascripts\/templates\/slide.js",
 			"position": 4,
+			"type": 0
+			},
+		{
+			"followForSyntaxChecking": 1,
+			"linkedFileAbbreviatedPath": "\/javascripts\/templates\/picture.js",
+			"position": 5,
 			"type": 0
 			}
 		]

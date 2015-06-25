@@ -1,6 +1,7 @@
-@import 'home';
 @import 'mixins';
+@import 'home';
 @import 'carousel';
+@import 'pictures';
 
 html {
   height: 100%;
@@ -19,12 +20,7 @@ main {
   color: #9BBB59;
   margin: 0 auto;
   max-width: 860px;
-  opacity: 0;
   padding: 20px;
-  @include prefix(transition, opacity 1500ms ease-in-out);
-  &.visible {
-    opacity: 1;
-  }
 }
 
 header.top {
@@ -142,4 +138,8 @@ footer {
     text-decoration: none;
   }
   @include prefix(box-sizing, border-box);
+}
+
+::selection {
+  background: #2E5200;
 }

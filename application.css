@@ -1,3 +1,13 @@
+.home {
+  opacity: 0;
+  -webkit-transition: opacity 1500ms ease-in-out;
+  -moz-transition: opacity 1500ms ease-in-out;
+  -ms-transition: opacity 1500ms ease-in-out;
+  -o-transition: opacity 1500ms ease-in-out;
+  transition: opacity 1500ms ease-in-out; }
+  .home.visible {
+    opacity: 1; }
+
 .carousel {
   height: 420px;
   display: block;
@@ -76,6 +86,26 @@
 .nav .next {
   right: 0; }
 
+.picture-tiles {
+  text-align: center; }
+
+.picture-tile {
+  display: inline-block;
+  height: 200px;
+  margin: 7px;
+  width: 200px; }
+  .picture-tile img {
+    height: 100%;
+    width: 100%;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    -ms-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
+    transition: all 200ms linear; }
+    .picture-tile img:hover {
+      height: 110%;
+      width: 110%; }
+
 html {
   height: 100%; }
 
@@ -95,15 +125,7 @@ main {
   color: #9BBB59;
   margin: 0 auto;
   max-width: 860px;
-  opacity: 0;
-  padding: 20px;
-  -webkit-transition: opacity 1500ms ease-in-out;
-  -moz-transition: opacity 1500ms ease-in-out;
-  -ms-transition: opacity 1500ms ease-in-out;
-  -o-transition: opacity 1500ms ease-in-out;
-  transition: opacity 1500ms ease-in-out; }
-  main.visible {
-    opacity: 1; }
+  padding: 20px; }
 
 header.top {
   background: url(images/gradient.png) repeat;
@@ -234,3 +256,6 @@ footer {
     color: black;
     font-weight: bold;
     text-decoration: none; }
+
+::selection {
+  background: #2E5200; }
