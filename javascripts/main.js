@@ -16,6 +16,10 @@
         }));
         $(".carousel").append($html);
       }
+
+      setTimeout(function() {
+        $("main").addClass("visible");
+      }, 100);
     });
 
     this.get('itenineraries');
