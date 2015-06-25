@@ -1,2 +1,28 @@
+html {
+  height: 100%; }
+
 body {
-  background: green; }
+  background-color: #113A1D;
+  margin: 0;
+  padding: 0; }
+
+header {
+  background: url(images/logo.png) no-repeat 10px center;
+  background-color: #9BBB59;
+  background-size: 150px;
+  height: 200px;
+  position: relative;
+  width: 100%; }
+
+h1 {
+  font-size: 48px;
+  left: 180px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
