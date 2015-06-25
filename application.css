@@ -1,20 +1,20 @@
-section.carousel {
+.carousel {
   height: 420px;
   display: block;
   margin: 10px auto 20px;
   padding: 0;
   position: relative;
   max-width: 860px; }
-  section.carousel input {
+  .carousel input {
     display: none; }
-  section.carousel input:checked + .slide-container .slide {
+  .carousel input:checked + .slide-container .slide {
     opacity: 1;
     transform: scale(1);
     transition: opacity 1s ease-in-out; }
-  section.carousel input:checked + .slide-container .nav label {
+  .carousel input:checked + .slide-container .nav label {
     display: block; }
 
-.slides * {
+.carousel * {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -75,10 +75,16 @@ html {
   height: 100%; }
 
 body {
-  background-color: #82936F;
+  background: #82936F;
+  background: linear-gradient(to right, #82936F 0%, #B9D3A4 50%, #82936F 100%);
   font-family: sans-serif;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  -webkit-linear-gradient: left, #82936F 0%, #B9D3A4 50%, #82936F 100%;
+  -moz-linear-gradient: left, #82936F 0%, #B9D3A4 50%, #82936F 100%;
+  -ms-linear-gradient: left, #82936F 0%, #B9D3A4 50%, #82936F 100%;
+  -o-linear-gradient: left, #82936F 0%, #B9D3A4 50%, #82936F 100%;
+  linear-gradient: left, #82936F 0%, #B9D3A4 50%, #82936F 100%; }
 
 main {
   color: #9BBB59;

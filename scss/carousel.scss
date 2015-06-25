@@ -1,6 +1,6 @@
 @import 'mixins';
 
-section.carousel {
+.carousel {
   height: 420px;
   display: block;
   margin: 10px auto 20px;
@@ -20,7 +20,7 @@ section.carousel {
   }
 }
 
-.slides * {
+.carousel * {
   @include prefix(user-select, none);
   -webkit-touch-callout: none;
 }
