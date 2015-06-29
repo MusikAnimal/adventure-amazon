@@ -1,0 +1,24 @@
+.picture-tiles {
+  text-align: center;
+}
+
+.picture-tile {
+  cursor: pointer;
+  display: inline-block;
+  height: 200px;
+  margin: 7px;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  @include prefix(box-sizing, border-box);
+  img {
+    height: auto;
+    overflow: hidden;
+    width: 100%;
+    @include prefix(transition, transform 800ms ease);
+    @include center();
+    &:hover {
+      @include prefix(transform, translateY(-50%) translateX(-50%) scale(1.06));
+    }
+  }
+}
