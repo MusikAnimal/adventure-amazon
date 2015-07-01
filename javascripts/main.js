@@ -3,7 +3,7 @@
     this.get('/', function() {
       $(".home").show();
       var images = [
-        "Boat", "Macaw5", "Monkey2", "Jaguar", "3 toed Sloth"
+        "Boat", "Macaw5", "Monkey2", "Jaguar", "3_toed_Sloth"
       ];
 
       for(var i in images) {
@@ -73,6 +73,7 @@
     });
 
     this.before({}, function(context) {
+      $(document).scrollTop(0);
       $(".page").hide().removeClass("visible");
       $("#lightboxOverlay, #lightbox").remove();
     });
