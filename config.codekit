@@ -742,6 +742,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/small\/logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.38236e+06,
+		"inputAbbreviatedPath": "\/images\/small\/logo.png",
+		"outputAbbreviatedPath": "\/images\/small\/logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/small\/Macaw.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
