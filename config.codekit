@@ -49,13 +49,13 @@
 		"useDoubleQuotes": 0,
 		"useUnixNewlines": 0
 		},
-	"\/images\/3 toed Sloth.JPG": {
+	"\/images\/3_toed_Sloth.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 77408,
-		"inputAbbreviatedPath": "\/images\/3 toed Sloth.JPG",
-		"outputAbbreviatedPath": "\/images\/3 toed Sloth.JPG",
+		"inputAbbreviatedPath": "\/images\/3_toed_Sloth.jpg",
+		"outputAbbreviatedPath": "\/images\/3_toed_Sloth.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -137,13 +137,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/Cock of the Rock.JPG": {
+	"\/images\/Cock_of_the_Rock.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 6.80156e+06,
-		"inputAbbreviatedPath": "\/images\/Cock of the Rock.JPG",
-		"outputAbbreviatedPath": "\/images\/Cock of the Rock.JPG",
+		"inputAbbreviatedPath": "\/images\/Cock_of_the_Rock.JPG",
+		"outputAbbreviatedPath": "\/images\/Cock_of_the_Rock.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -522,13 +522,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/small\/3 toed Sloth.jpg": {
+	"\/images\/small\/3_toed_Sloth.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 25090,
-		"inputAbbreviatedPath": "\/images\/small\/3 toed Sloth.jpg",
-		"outputAbbreviatedPath": "\/images\/small\/3 toed Sloth.jpg",
+		"inputAbbreviatedPath": "\/images\/small\/3_toed_Sloth.jpg",
+		"outputAbbreviatedPath": "\/images\/small\/3_toed_Sloth.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -599,13 +599,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/small\/Cock of the Rock.jpg": {
+	"\/images\/small\/Cock_of_the_Rock.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 33011,
-		"inputAbbreviatedPath": "\/images\/small\/Cock of the Rock.jpg",
-		"outputAbbreviatedPath": "\/images\/small\/Cock of the Rock.jpg",
+		"inputAbbreviatedPath": "\/images\/small\/Cock_of_the_Rock.jpg",
+		"outputAbbreviatedPath": "\/images\/small\/Cock_of_the_Rock.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -764,24 +764,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/small\/Macaw2.jpg": {
+	"\/images\/small\/Macaw2.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 54673,
-		"inputAbbreviatedPath": "\/images\/small\/Macaw2.jpg",
-		"outputAbbreviatedPath": "\/images\/small\/Macaw2.jpg",
+		"inputAbbreviatedPath": "\/images\/small\/Macaw2.JPG",
+		"outputAbbreviatedPath": "\/images\/small\/Macaw2.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/small\/Macaw3.jpg": {
+	"\/images\/small\/Macaw3.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 26754,
-		"inputAbbreviatedPath": "\/images\/small\/Macaw3.jpg",
-		"outputAbbreviatedPath": "\/images\/small\/Macaw3.jpg",
+		"inputAbbreviatedPath": "\/images\/small\/Macaw3.JPG",
+		"outputAbbreviatedPath": "\/images\/small\/Macaw3.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -852,13 +852,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/small\/Monkey3.jpg": {
+	"\/images\/small\/Monkey3.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 56794,
-		"inputAbbreviatedPath": "\/images\/small\/Monkey3.jpg",
-		"outputAbbreviatedPath": "\/images\/small\/Monkey3.jpg",
+		"inputAbbreviatedPath": "\/images\/small\/Monkey3.JPG",
+		"outputAbbreviatedPath": "\/images\/small\/Monkey3.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -874,24 +874,24 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/small\/Monkey5.jpg": {
+	"\/images\/small\/Monkey5.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 47900,
-		"inputAbbreviatedPath": "\/images\/small\/Monkey5.jpg",
-		"outputAbbreviatedPath": "\/images\/small\/Monkey5.jpg",
+		"inputAbbreviatedPath": "\/images\/small\/Monkey5.JPG",
+		"outputAbbreviatedPath": "\/images\/small\/Monkey5.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/images\/small\/Monkey6.jpg": {
+	"\/images\/small\/Monkey6.JPG": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 58613,
-		"inputAbbreviatedPath": "\/images\/small\/Monkey6.jpg",
-		"outputAbbreviatedPath": "\/images\/small\/Monkey6.jpg",
+		"inputAbbreviatedPath": "\/images\/small\/Monkey6.JPG",
+		"outputAbbreviatedPath": "\/images\/small\/Monkey6.JPG",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

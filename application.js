@@ -3140,7 +3140,7 @@ var __module0__ = (function(__dependency1__, __dependency2__, __dependency3__, _
       $(".picture-tiles").html("");
 
       var pictures = [
-        "3 toed Sloth", "Boat", "Bungalow", "Bungalow2", "Butterfly", "Butterflys", "Caterpillar", "Cock of the Rock", "Forest", "Forest2", "Grasshopper", "Guide", "Guide2", "Guide3", "Guide4", "Guide7", "Guide8", "Hoatzin", "Jaguar", "Jaguar2", "Macaw", "Macaw2", "Macaw3", "Macaw4", "Macaw5", "Macaw6", "Monkey", "Monkey2", "Monkey3", "Monkey4", "Monkey5", "Monkey6", "Parrots", "Plant", "Plant2", "Plant3", "River", "Taper", "Turantula"
+        "3_toed_Sloth", "Boat", "Bungalow", "Bungalow2", "Butterfly", "Butterflys", "Caterpillar", "Cock_of_the_Rock", "Forest", "Forest2", "Grasshopper", "Guide", "Guide2", "Guide3", "Guide4", "Guide7", "Guide8", "Hoatzin", "Jaguar", "Jaguar2", "Macaw", "Macaw2", "Macaw3", "Macaw4", "Macaw5", "Macaw6", "Monkey", "Monkey2", "Monkey3", "Monkey4", "Monkey5", "Monkey6", "Parrots", "Plant", "Plant2", "Plant3", "River", "Taper", "Turantula"
       ];
 
       for(var i in pictures) {
