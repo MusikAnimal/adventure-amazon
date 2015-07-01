@@ -23,8 +23,23 @@
       }, 100);
     });
 
-    this.get('itenineraries', function() {
-      $(".itenineraries").show();
+    this.get('itineraries', function() {
+      $(".itineraries").show();
+
+      $(".to-cultural-zone").on("click", function() {
+        $("html, body").animate({
+          scrollTop: $(".cultural-zone").offset().top
+        }, 250);
+      });
+
+      $(".to-reserved-zone").on("click", function() {
+        $("html, body").animate({
+          scrollTop: $(".reserved-zone").offset().top
+        }, 250);
+      });
+
+      var options = new LightboxOptions();
+      var lightbox = new Lightbox(options);
     });
 
     this.get('pictures', function() {
@@ -32,7 +47,7 @@
       $(".picture-tiles").html("");
 
       var pictures = [
-        "3 toed Sloth", "Boat", "Bungalow"//, "Bungalow2", "Butterfly", "Butterflys", "Caterpillar", "Cock of the Rock", "Forest", "Forest2", "Grasshopper", "Guide", "Guide2", "Guide3", "Guide4", "Guide7", "Guide8", "Hoatzin", "Jaguar", "Jaguar2", "Macaw", "Macaw2", "Macaw3", "Macaw4", "Macaw5", "Macaw6", "Monkey", "Monkey2", "Monkey3", "Monkey4", "Monkey5", "Monkey6", "Parrots", "Plant", "Plant2", "Plant3", "River", "Taper", "Turantula"
+        "3 toed Sloth", "Boat", "Bungalow", "Bungalow2", "Butterfly", "Butterflys", "Caterpillar", "Cock of the Rock", "Forest", "Forest2", "Grasshopper", "Guide", "Guide2", "Guide3", "Guide4", "Guide7", "Guide8", "Hoatzin", "Jaguar", "Jaguar2", "Macaw", "Macaw2", "Macaw3", "Macaw4", "Macaw5", "Macaw6", "Monkey", "Monkey2", "Monkey3", "Monkey4", "Monkey5", "Monkey6", "Parrots", "Plant", "Plant2", "Plant3", "River", "Taper", "Turantula"
       ];
 
       for(var i in pictures) {
@@ -56,6 +71,7 @@
 
     this.before({}, function(context) {
       $(".page").hide().removeClass("visible");
+      $("#lightboxOverlay, #lightbox").remove();
     });
 
     this.addListeners = function() {};

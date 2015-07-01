@@ -3116,8 +3116,23 @@ var __module0__ = (function(__dependency1__, __dependency2__, __dependency3__, _
       }, 100);
     });
 
-    this.get('itenineraries', function() {
-      $(".itenineraries").show();
+    this.get('itineraries', function() {
+      $(".itineraries").show();
+
+      $(".to-cultural-zone").on("click", function() {
+        $("html, body").animate({
+          scrollTop: $(".cultural-zone").offset().top
+        }, 250);
+      });
+
+      $(".to-reserved-zone").on("click", function() {
+        $("html, body").animate({
+          scrollTop: $(".reserved-zone").offset().top
+        }, 250);
+      });
+
+      var options = new LightboxOptions();
+      var lightbox = new Lightbox(options);
     });
 
     this.get('pictures', function() {
@@ -3125,7 +3140,7 @@ var __module0__ = (function(__dependency1__, __dependency2__, __dependency3__, _
       $(".picture-tiles").html("");
 
       var pictures = [
-        "3 toed Sloth", "Boat", "Bungalow"//, "Bungalow2", "Butterfly", "Butterflys", "Caterpillar", "Cock of the Rock", "Forest", "Forest2", "Grasshopper", "Guide", "Guide2", "Guide3", "Guide4", "Guide7", "Guide8", "Hoatzin", "Jaguar", "Jaguar2", "Macaw", "Macaw2", "Macaw3", "Macaw4", "Macaw5", "Macaw6", "Monkey", "Monkey2", "Monkey3", "Monkey4", "Monkey5", "Monkey6", "Parrots", "Plant", "Plant2", "Plant3", "River", "Taper", "Turantula"
+        "3 toed Sloth", "Boat", "Bungalow", "Bungalow2", "Butterfly", "Butterflys", "Caterpillar", "Cock of the Rock", "Forest", "Forest2", "Grasshopper", "Guide", "Guide2", "Guide3", "Guide4", "Guide7", "Guide8", "Hoatzin", "Jaguar", "Jaguar2", "Macaw", "Macaw2", "Macaw3", "Macaw4", "Macaw5", "Macaw6", "Monkey", "Monkey2", "Monkey3", "Monkey4", "Monkey5", "Monkey6", "Parrots", "Plant", "Plant2", "Plant3", "River", "Taper", "Turantula"
       ];
 
       for(var i in pictures) {
@@ -3149,6 +3164,7 @@ var __module0__ = (function(__dependency1__, __dependency2__, __dependency3__, _
 
     this.before({}, function(context) {
       $(".page").hide().removeClass("visible");
+      $("#lightboxOverlay, #lightbox").remove();
     });
 
     this.addListeners = function() {};
@@ -3185,7 +3201,7 @@ templates['picture'] = template({"compiler":[6,">= 2.0.0-beta.1"],"main":functio
   var helper, functionType="function", helperMissing=helpers.helperMissing, escapeExpression=this.escapeExpression;
   return "<span class=\"picture-tile\">\n  <a href=\"images/"
     + escapeExpression(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"image","hash":{},"data":data}) : helper)))
-    + ".jpg\" data-lightbox=\"asset\">\n    <img src=\"images/"
+    + ".jpg\" data-lightbox=\"asset\">\n    <img src=\"images/small/"
     + escapeExpression(((helper = (helper = helpers.image || (depth0 != null ? depth0.image : depth0)) != null ? helper : helperMissing),(typeof helper === functionType ? helper.call(depth0, {"name":"image","hash":{},"data":data}) : helper)))
     + ".jpg\" />\n  </a>\n</span>";
 },"useData":true});

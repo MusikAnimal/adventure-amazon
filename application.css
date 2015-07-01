@@ -89,6 +89,22 @@
 h2 {
   color: #333; }
 
+.itineraries h2 {
+  font-family: 'Sigmar One', sans-serif; }
+.itineraries nav {
+  border: solid 2px #2E5200;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
+  .itineraries nav a {
+    display: inline-block;
+    width: 50%; }
+.itineraries .map {
+  float: right;
+  margin: 0 0 10px 10px; }
+
 .picture-tiles {
   text-align: center; }
 

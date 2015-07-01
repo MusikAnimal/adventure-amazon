@@ -1,0 +1,24 @@
+@import 'mixins';
+
+h2 {
+  color: #333;
+}
+
+.itineraries {
+  h2 {
+    font-family: 'Sigmar One', sans-serif;
+  }
+  nav {
+    border: solid 2px #2E5200;
+    @include prefix(border-radius, 10px);
+    a {
+      display: inline-block;
+      width: 50%;
+    }
+  }
+
+  .map {
+    float: right;
+    margin: 0 0 10px 10px;
+  }
+}
