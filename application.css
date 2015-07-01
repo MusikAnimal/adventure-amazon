@@ -86,10 +86,8 @@
 .nav .next {
   right: 0; }
 
-h2 {
-  color: #333; }
-
 .itineraries h2 {
+  color: #333;
   font-family: 'Sigmar One', sans-serif; }
 .itineraries nav {
   border: solid 2px #2E5200;
@@ -144,6 +142,13 @@ h2 {
       -ms-transform: translateY(-50%) translateX(-50%) scale(1.06);
       -o-transform: translateY(-50%) translateX(-50%) scale(1.06);
       transform: translateY(-50%) translateX(-50%) scale(1.06); }
+
+.terms h2 {
+  color: #333;
+  font-family: 'Sigmar One', sans-serif;
+  text-align: center; }
+.terms a {
+  color: #B9D3A4; }
 
 /* Preload images */
 body:after {
@@ -448,7 +453,7 @@ h1, h3 {
   font-weight: bold;
   padding: 0; }
 
-article.textbox {
+.textbox {
   background: #424A3E;
   color: #FFFFFF;
   margin-bottom: 20px;
@@ -463,7 +468,7 @@ article.textbox {
   -ms-box-shadow: 2px 2px 2px #666;
   -o-box-shadow: 2px 2px 2px #666;
   box-shadow: 2px 2px 2px #666; }
-  article.textbox header {
+  .textbox header {
     font-family: "Roboto Condensed", sans-serif;
     margin-bottom: 10px;
     text-transform: uppercase; }

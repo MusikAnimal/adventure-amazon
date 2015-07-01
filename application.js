@@ -3160,7 +3160,10 @@ var __module0__ = (function(__dependency1__, __dependency2__, __dependency3__, _
     });
 
     this.get('contact');
-    this.get('terms');
+
+    this.get('terms', function() {
+      $(".terms").show();
+    });
 
     this.before({}, function(context) {
       $(".page").hide().removeClass("visible");

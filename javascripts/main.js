@@ -67,7 +67,10 @@
     });
 
     this.get('contact');
-    this.get('terms');
+
+    this.get('terms', function() {
+      $(".terms").show();
+    });
 
     this.before({}, function(context) {
       $(".page").hide().removeClass("visible");

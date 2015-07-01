@@ -1,11 +1,8 @@
 @import 'mixins';
 
-h2 {
-  color: #333;
-}
-
 .itineraries {
   h2 {
+    color: #333;
     font-family: 'Sigmar One', sans-serif;
   }
   nav {

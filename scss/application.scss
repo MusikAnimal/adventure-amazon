@@ -3,6 +3,7 @@
 @import 'carousel';
 @import 'itineraries';
 @import 'pictures';
+@import 'terms';
 @import 'lightbox';
 
 html {
@@ -114,7 +115,7 @@ h1, h3 {
   padding: 0;
 }
 
-article.textbox {
+.textbox {
   background: #424A3E;
   color: #FFFFFF;
   margin-bottom: 20px;
