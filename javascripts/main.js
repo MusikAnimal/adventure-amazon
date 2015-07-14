@@ -66,7 +66,9 @@
       }, 100);
     });
 
-    this.get('contact');
+    this.get('contact', function() {
+      $(".contact").show();
+    });
 
     this.get('terms', function() {
       $(".terms").show();

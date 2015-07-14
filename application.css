@@ -143,6 +143,107 @@
       -o-transform: translateY(-50%) translateX(-50%) scale(1.06);
       transform: translateY(-50%) translateX(-50%) scale(1.06); }
 
+.contact h2 {
+  color: #333;
+  font-family: 'Sigmar One', sans-serif;
+  text-align: center; }
+.contact p {
+  padding-bottom: 10px; }
+.contact .question {
+  display: block;
+  margin: 15px 0 0; }
+.contact form {
+  margin: 0 auto;
+  max-width: 500px; }
+.contact .question {
+  position: relative; }
+  .contact .question::after {
+    clear: both;
+    content: "";
+    display: block; }
+.contact label {
+  display: inline-block;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-right: -4px;
+  text-transform: uppercase;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .contact label.required::after {
+    color: red;
+    content: "*";
+    display: inline-block;
+    margin-left: 3px; }
+.contact input, .contact textarea {
+  background: #E9F3E4;
+  border: solid 3px #82936F;
+  color: #4F7840;
+  font-size: 13px;
+  height: 3em;
+  margin-left: 30%;
+  padding: 10px;
+  width: 70%;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  .contact input:focus, .contact textarea:focus {
+    border-color: #B9D3A4;
+    outline: none;
+    -webkit-box-shadow: 0 0 10px #B9D3A4;
+    -moz-box-shadow: 0 0 10px #B9D3A4;
+    -ms-box-shadow: 0 0 10px #B9D3A4;
+    -o-box-shadow: 0 0 10px #B9D3A4;
+    box-shadow: 0 0 10px #B9D3A4; }
+.contact textarea {
+  height: 12em; }
+.contact button {
+  background: #B9D3A4;
+  border: solid 2px #2E5200;
+  color: #2E5200;
+  cursor: pointer;
+  display: block;
+  margin: 10px auto 0;
+  outline: none;
+  padding: 10px 30px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px; }
+  .contact button:active {
+    background: #2E5200;
+    border: solid 2px #B9D3A4;
+    color: #B9D3A4; }
+@media screen and (max-width: 500px) {
+  .contact label {
+    display: block;
+    position: relative;
+    top: 0;
+    width: 100%;
+    -webkit-tranform: none;
+    -moz-tranform: none;
+    -ms-tranform: none;
+    -o-tranform: none;
+    tranform: none; }
+  .contact input, .contact textarea {
+    display: block;
+    margin: 0;
+    width: 100%; }
+  .contact button {
+    width: 100%; } }
+
 .terms h2 {
   color: #333;
   font-family: 'Sigmar One', sans-serif;

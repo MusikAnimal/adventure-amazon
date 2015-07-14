@@ -3159,7 +3159,9 @@ var __module0__ = (function(__dependency1__, __dependency2__, __dependency3__, _
       }, 100);
     });
 
-    this.get('contact');
+    this.get('contact', function() {
+      $(".contact").show();
+    });
 
     this.get('terms', function() {
       $(".terms").show();
