@@ -525,7 +525,6 @@ header.top {
   header.top h1 {
     display: inline-block;
     font-size: 68px;
-    height: 0;
     position: relative;
     z-index: 10;
     -webkit-user-select: none;
@@ -540,7 +539,8 @@ header.top {
     display: inline-block;
     position: absolute;
     right: 0;
-    top: 0; }
+    top: 0;
+    z-index: 1000; }
     header.top .fb_iframe_widget > span {
       bottom: 2vw;
       right: 3px;
