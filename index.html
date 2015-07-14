@@ -9,10 +9,23 @@
     <meta content='width=device-width,user-scalable=no,maximum-scale=1.0,initial-scale=1.0' name='viewport'>
   </head>
   <body>
+    <div id='fb-root'></div>
+    <script>
+      (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4&appId=106985796036097";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <header class='top'>
       <div class='header-context'>
-        <h1>Adventure Amazon</h1>
+        <h1>
+          <span>Adventure Amazon</span>
+        </h1>
         <span class='logo'></span>
+        <div class='fb-like' data-action='like' data-href='https://www.facebook.com/adventureamazon1' data-layout='button' data-share='true' data-show-faces='false'></div>
       </div>
     </header>
     <nav>

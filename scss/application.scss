@@ -42,7 +42,6 @@ header.top {
     height: 20vw;
     line-height: 20vw;
   }
-  @include prefix(user-select, none);
   .header-context {
     display: inline-block;
     position: relative;
@@ -55,6 +54,7 @@ header.top {
     width: 150px;
     z-index: 0;
     @include center('vertical');
+    @include prefix(user-select, none);
     @media screen and (max-width: 950px) {
       background-size: 18vw;
       height: 18vw;
@@ -65,10 +65,24 @@ header.top {
   h1 {
     display: inline-block;
     font-size: 68px;
+    height: 0;
     position: relative;
     z-index: 10;
+    @include prefix(user-select, none);
     @media screen and (max-width: 850px) {
       font-size: 7vw;
+    }
+  }
+
+  .fb_iframe_widget {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    & > span {
+      bottom: 2vw;
+      right: 3px;
+      vertical-align: bottom;
     }
   }
 }

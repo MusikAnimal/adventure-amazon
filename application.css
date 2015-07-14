@@ -489,12 +489,7 @@ header.top {
   line-height: 200px;
   position: relative;
   text-align: center;
-  width: 100%;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  -o-user-select: none;
-  user-select: none; }
+  width: 100%; }
   @media screen and (max-width: 950px) {
     header.top {
       height: 20vw;
@@ -515,7 +510,12 @@ header.top {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; }
     @media screen and (max-width: 950px) {
       header.top .logo {
         background-size: 18vw;
@@ -525,11 +525,26 @@ header.top {
   header.top h1 {
     display: inline-block;
     font-size: 68px;
+    height: 0;
     position: relative;
-    z-index: 10; }
+    z-index: 10;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none; }
     @media screen and (max-width: 850px) {
       header.top h1 {
         font-size: 7vw; } }
+  header.top .fb_iframe_widget {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    header.top .fb_iframe_widget > span {
+      bottom: 2vw;
+      right: 3px;
+      vertical-align: bottom; }
 
 nav {
   background: url(images/gradient.png) repeat;
