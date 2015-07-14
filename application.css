@@ -23,6 +23,11 @@
     transition: opacity 1s ease-in-out; }
   .carousel input:checked + .slide-container .nav label {
     display: block; }
+  @media screen and (max-width: 560px) {
+    .carousel {
+      height: 50vw; }
+      .carousel .prev, .carousel .next {
+        line-height: 100%; } }
 
 .carousel * {
   -webkit-user-select: none;
@@ -39,14 +44,28 @@
   display: block;
   height: 100%;
   opacity: 0;
+  overflow: hidden;
   position: absolute;
   top: 0;
   transform: scale(0);
   transition: all .7s ease-in-out;
-  width: 100%; }
+  width: 100%;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px; }
   .slide img {
-    height: 100%;
+    height: auto;
     width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;

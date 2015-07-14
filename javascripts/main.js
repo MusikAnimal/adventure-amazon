@@ -11,8 +11,8 @@
         var $html = $(Handlebars.templates.slide({
           id: index,
           image: images[i],
-          prevId: index-1 < 1 ? images.length-1 : index-1,
-          nextId: index+1 > images.length-1 ? 1 : index+1,
+          prevId: index-1 < 0 ? images.length-1 : index-1,
+          nextId: index+1 > images.length-1 ? 0 : index+1,
           checkedText: index===0 ? "checked" : ""
         }));
         $(".carousel").append($html);

@@ -3104,8 +3104,8 @@ var __module0__ = (function(__dependency1__, __dependency2__, __dependency3__, _
         var $html = $(Handlebars.templates.slide({
           id: index,
           image: images[i],
-          prevId: index-1 < 1 ? images.length-1 : index-1,
-          nextId: index+1 > images.length-1 ? 1 : index+1,
+          prevId: index-1 < 0 ? images.length-1 : index-1,
+          nextId: index+1 > images.length-1 ? 0 : index+1,
           checkedText: index===0 ? "checked" : ""
         }));
         $(".carousel").append($html);
