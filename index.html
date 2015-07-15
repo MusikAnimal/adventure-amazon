@@ -6,9 +6,20 @@
     <link href='application.css' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+    <link href='favicon.ico' rel='shortcut icon' sizes='16x16 32x32 96x96'>
+    <link href='images/icons/apple-icon-57x57.png' rel='apple-touch-icon' sizes='57x57'>
+    <link href='images/icons/apple-icon-precomposed.png' rel='apple-touch-icon-,precomposed' sizes='57x57'>
+    <link href='images/icons/apple-icon-72x72.png' rel='apple-touch-icon' sizes='72x72'>
+    <link href='images/icons/apple-icon-114x114.png' rel='apple-touch-icon' sizes='114x114'>
+    <link href='images/icons/apple-icon-120x120.png' rel='apple-touch-icon' sizes='120x120'>
+    <link href='images/icons/apple-icon-144x144.png' rel='apple-touch-icon' sizes='144x144'>
+    <link href='images/icons/apple-icon-152x152.png' rel='apple-touch-icon' sizes='152x152'>
+    <meta content='yes' name='apple-mobile-web-app-capable'>
+    <meta content='black-translucent' name='apple-mobile-web-app-status-bar-style'>
     <meta content='width=device-width,user-scalable=no,maximum-scale=1.0,initial-scale=1.0' name='viewport'>
+    <meta content='Adventure Amazon is a Travel Agency providing unique tours to Manu Rainforest of Peru.' name='description'>
   </head>
-  <body>
+  <body itemscope itemtype='http://schema.org/TravelAgency'>
     <div id='fb-root'></div>
     <script>
       (function(d, s, id) {
@@ -22,11 +33,12 @@
     <header class='top'>
       <div class='header-context'>
         <h1>
-          <span>Adventure Amazon</span>
+          <span itemprop='name'>Adventure Amazon</span>
         </h1>
         <span class='logo'></span>
         <div class='fb-like' data-action='like' data-href='https://www.facebook.com/adventureamazon1' data-layout='button' data-share='true' data-show-faces='false'></div>
       </div>
+      <div class='site-keywords' itemprop='keywords'>Amazon Peru Rainforest Manu Cusco Cuzco Machu Picchu</div>
     </header>
     <nav>
       <a href='#/'>Home</a>
@@ -42,7 +54,7 @@
             <header>
               <h3>About Us</h3>
             </header>
-            <div>
+            <div itemprop='description'>
               Welcome to Adventure Amazon!
               Adventure Amazon is a Travel Agency providing unique tours to Manu Rainforest in Peru. Our goal is to provide an exciting adventure into the Amazon Rainforest and to deliver our guests a satisfying, unique experience. Our guides, drivers and cooks are all highly trained conservationists, striving to protect our beautiful rainforests. Our quest begins and ends in the historical town of Cusco, Peru. We take you over the Andes, into the Amazon and back again. Come with us for an unforgettable experience into the Amazon!
             </div>
@@ -389,7 +401,7 @@
         </section>
       </div>
     </main>
-    <footer>
+    <footer itemscope itemtype='http://schema.org/WPFooter' role='contentinfo'>
       <a href='mailto:AdventureAmazon1@gmail.com'>Send Us an Email</a>
       &middot;
       <a href='#/terms'>Terms and Conditions</a>

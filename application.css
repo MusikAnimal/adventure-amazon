@@ -545,6 +545,9 @@ header.top {
       bottom: 2vw;
       right: 3px;
       vertical-align: bottom; }
+  header.top .site-keywords {
+    position: absolute;
+    visibility: hidden; }
 
 nav {
   background: url(images/gradient.png) repeat;

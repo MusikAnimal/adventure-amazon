@@ -6,8 +6,19 @@
     %link{rel: "stylesheet", href: "application.css", type: "text/css"}
     %link{href: "http://fonts.googleapis.com/css?family=Sigmar+One", rel: "stylesheet", type: "text/css"}
     %link{href: "http://fonts.googleapis.com/css?family=Roboto+Condensed", rel: "stylesheet", type: "text/css"}
-    %meta{content: "width=device-width,user-scalable=no,maximum-scale=1.0,initial-scale=1.0", name:"viewport"}
-  %body
+    %link{rel: "shortcut icon", sizes: "16x16 32x32 96x96", href: "favicon.ico"}
+    %link{rel: "apple-touch-icon", sizes: "57x57", href: "images/icons/apple-icon-57x57.png"}
+    %link{rel: "apple-touch-icon-,precomposed", sizes: "57x57", href: "images/icons/apple-icon-precomposed.png"}
+    %link{rel: "apple-touch-icon", sizes: "72x72", href: "images/icons/apple-icon-72x72.png"}
+    %link{rel: "apple-touch-icon", sizes: "114x114", href: "images/icons/apple-icon-114x114.png"}
+    %link{rel: "apple-touch-icon", sizes: "120x120", href: "images/icons/apple-icon-120x120.png"}
+    %link{rel: "apple-touch-icon", sizes: "144x144", href: "images/icons/apple-icon-144x144.png"}
+    %link{rel: "apple-touch-icon", sizes: "152x152", href: "images/icons/apple-icon-152x152.png"}
+    %meta{name: "apple-mobile-web-app-capable", content: "yes"}
+    %meta{name: "apple-mobile-web-app-status-bar-style", content: "black-translucent"}
+    %meta{name: "viewport", content: "width=device-width,user-scalable=no,maximum-scale=1.0,initial-scale=1.0"}
+    %meta{name: "description", content: "Adventure Amazon is a Travel Agency providing unique tours to Manu Rainforest of Peru."}
+  %body{itemscope: true, itemtype: "http://schema.org/TravelAgency"}
     %div#fb-root
     :javascript
       (function(d, s, id) {
@@ -20,9 +31,10 @@
     %header.top
       %div.header-context
         %h1
-          %span Adventure Amazon
+          %span{itemprop: "name"} Adventure Amazon
         %span.logo
         %div.fb-like{"data-href" => "https://www.facebook.com/adventureamazon1", "data-layout" => "button", "data-action" => "like", "data-show-faces" => "false", "data-share" => "true"}
+      %div.site-keywords{itemprop: "keywords"} Amazon Peru Rainforest Manu Cusco Cuzco Machu Picchu
     %nav
       %a{href: "#/"} Home
       %a{href: "#/itineraries"} Itineraries
@@ -35,7 +47,7 @@
           %article.about.textbox
             %header
               %h3 About Us
-            %div
+            %div{itemprop: "description"}
               Welcome to Adventure Amazon!
               Adventure Amazon is a Travel Agency providing unique tours to Manu Rainforest in Peru. Our goal is to provide an exciting adventure into the Amazon Rainforest and to deliver our guests a satisfying, unique experience. Our guides, drivers and cooks are all highly trained conservationists, striving to protect our beautiful rainforests. Our quest begins and ends in the historical town of Cusco, Peru. We take you over the Andes, into the Amazon and back again. Come with us for an unforgettable experience into the Amazon!
           %article.about-manu.textbox
@@ -303,7 +315,7 @@
             %li
               For any further questions please contact us at
               %a{href: "mailto:AdventureAmazon1@gmail.com"} AdventureAmazon1@gmail.com
-    %footer
+    %footer{role: "contentinfo", itemscope: true, itemtype: "http://schema.org/WPFooter"}
       %a{href: "mailto:AdventureAmazon1@gmail.com"} Send Us an Email
       &middot;
       %a{href: "#/terms"} Terms and Conditions

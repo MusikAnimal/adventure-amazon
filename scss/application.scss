@@ -85,6 +85,11 @@ header.top {
       vertical-align: bottom;
     }
   }
+
+  .site-keywords {
+    position: absolute;
+    visibility: hidden;
+  }
 }
 
 nav {
